@@ -1,4 +1,4 @@
-class AddCustomFieldsIsComputed < PLUGIN_MIGRATION_CLASS
+class AddCustomFieldsIsComputed < ActiveRecord::Migration[4.2]
   def up
     add_column :custom_fields, :is_computed, :boolean, default: false
   end
